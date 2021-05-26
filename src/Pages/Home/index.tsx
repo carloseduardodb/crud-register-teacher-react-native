@@ -21,13 +21,13 @@ const Home = () => {
         <CustomButton
           title="Adicionar"
           icon="feather"
-          routeName="teste"
+          routeName="Added"
         ></CustomButton>
 
         <CustomButton
           title="Gerenciar"
           icon="codesandbox"
-          routeName="teste"
+          routeName="Management"
         ></CustomButton>
       </Menu>
     </Container>

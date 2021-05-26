@@ -2,6 +2,8 @@ import React from "react";
 import { NavigationContainer } from "@react-navigation/native";
 import { createStackNavigator } from "@react-navigation/stack";
 import Home from "../Pages/Home";
+import Added from "../Pages/Added";
+import Management from "../Pages/Management";
 
 const AppStack = createStackNavigator();
 
@@ -17,6 +19,8 @@ const Routes = () => {
         }}
       >
         <AppStack.Screen name="Home" component={Home} />
+        <AppStack.Screen name="Added" component={Added} />
+        <AppStack.Screen name="Management" component={Management} />
       </AppStack.Navigator>
     </NavigationContainer>
   );
