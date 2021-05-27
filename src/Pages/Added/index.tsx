@@ -9,9 +9,8 @@ import {
   DrawTeacher,
   ContentImage,
 } from "./styles";
-import DefaultButton from "../../Components/DefautButton";
+import DefaultButton from "../../Components/DefaultButton";
 import ReturnButton from "../../Components/ReturnButton";
-import { View } from "react-native";
 
 interface propsForm {
   name: string;
