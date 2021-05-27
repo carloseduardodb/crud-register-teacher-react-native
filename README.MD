@@ -4,3 +4,4 @@
 
 <br>
 <img src="./assets/project_image.png"/>
+<img src="./assets/project_image_02.png"/>
