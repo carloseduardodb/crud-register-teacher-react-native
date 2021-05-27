@@ -9,8 +9,8 @@ export const Container = styled.View`
 `;
 
 export const DrawTeacher = styled.ImageBackground`
-  width: 90%;
-  margin-vertical: 30px;
+  width: 80%;
+  margin-vertical: 5%;
   height: 50%;
 `;
 
