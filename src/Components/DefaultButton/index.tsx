@@ -6,18 +6,18 @@ import { Feather as Icon } from "@expo/vector-icons";
 interface ComponentProps extends TouchableOpacityProps {
   title: string;
   color: string;
-  icon?: string;
+  icon?: "trash" | "send" | "chevrons-up";
 }
 
 const DefaultButton: React.FC<ComponentProps> = ({
   title,
-  onPress,
+  icon = "send",
   ...rest
 }) => {
   return (
     <TouchableButton {...rest}>
       <ContentIcon>
-        <Icon name="send" color="#fff" size={25} />
+        <Icon name={icon} color="#fff" size={25} />
       </ContentIcon>
       <TitleButton>{title}</TitleButton>
     </TouchableButton>

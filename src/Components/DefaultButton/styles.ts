@@ -17,7 +17,6 @@ export const TouchableButton = styled.TouchableOpacity<any | ComponentProps>`
   elevation: 3;
   flex-direction: row;
   align-items: center;
-  max-width: 150px;
   text-align: center;
 `;
 
