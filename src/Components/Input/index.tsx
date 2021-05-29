@@ -7,6 +7,7 @@ import { useField } from "@unform/core";
 interface Props extends TextInputProps {
   icon?: string | any;
   name?: string;
+  iconColor?: string;
 }
 
 interface InputValueReferences {
@@ -16,6 +17,7 @@ interface InputValueReferences {
 const Input: React.FC<Props> = ({
   name = "",
   icon = "alert-circle",
+  iconColor = "#30a6ff",
   ...rest
 }) => {
   const inputElementRef = useRef<any>(null);
@@ -39,7 +41,7 @@ const Input: React.FC<Props> = ({
   return (
     <Container>
       <ContentIcon>
-        <Icon size={30} color="#30a6ff" name={icon} />
+        <Icon size={30} color={iconColor} name={icon} />
       </ContentIcon>
 
       <Ipt
