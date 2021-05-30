@@ -1,10 +1,10 @@
 import React from "react";
 import { NavigationContainer } from "@react-navigation/native";
 import { createStackNavigator } from "@react-navigation/stack";
-import Home from "../Pages/Home";
-import Added from "../Pages/Added";
-import Management from "../Pages/Management";
-import Editing from "../Pages/Editing";
+import Home from "../pages/Home";
+import Added from "../pages/Added";
+import Management from "../pages/Management";
+import Editing from "../pages/Editing";
 
 const AppStack = createStackNavigator();
 

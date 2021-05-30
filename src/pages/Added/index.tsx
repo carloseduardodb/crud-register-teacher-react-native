@@ -1,5 +1,7 @@
 import React, { useRef, useCallback } from "react";
-import Input from "../../Components/Input";
+import Input from "../../components/Input";
+import ReturnButton from "../../components/ReturnButton";
+import DefaultButton from "../../components/DefaultButton";
 import { Form } from "@unform/mobile";
 import * as Yup from "yup";
 import {
@@ -10,8 +12,6 @@ import {
   DrawTeacher,
   ContentImage,
 } from "./styles";
-import DefaultButton from "../../Components/DefaultButton";
-import ReturnButton from "../../Components/ReturnButton";
 import { FormHandles } from "@unform/core";
 import getValidationsErrors from "../../utils/getValidationsErrors";
 import api from "../../services/api";
