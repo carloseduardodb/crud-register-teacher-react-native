@@ -1,33 +1,26 @@
-import React, { useCallback, useRef } from "react";
+import React, { useState } from "react";
 import { Container, ContentAll, Title } from "./styles";
 import ReturnButton from "../../components/ReturnButton";
 import ListingTeacher from "../../components/ListingTeacher";
-import Input from "../../components/Input";
-import { FormHandles } from "@unform/core";
-import { Form } from "@unform/mobile";
-import contextSearch from "../../contexts/SearchingContext";
+import SearchingContext from "../../contexts/SearchingContext";
+import DefaultInput from "../../components/DefaultInput";
 
 const Management = () => {
-  const formRef = useRef<FormHandles>(null);
-
-  const search = useCallback(async (data: string, { reset }) => {}, []);
-
+  const [search, setSearch] = useState("");
   return (
     <Container>
       <ReturnButton />
       <ContentAll>
-        <Title>Escolha um registro</Title>
-        <Form ref={formRef} onSubmit={search}>
-          <Input
+        <SearchingContext.Provider value={{ search }}>
+          <Title>Escolha um registro</Title>
+          <DefaultInput
             name="search"
             icon="search"
-            onChange={() => {
-              formRef.current?.submitForm();
-            }}
+            onChangeText={setSearch}
             placeholder="Pesquisar"
           />
-        </Form>
-        <ListingTeacher />
+          <ListingTeacher />
+        </SearchingContext.Provider>
       </ContentAll>
     </Container>
   );
