@@ -7,7 +7,14 @@ import DefaultButton from "../../components/DefaultButton";
 import Input from "../../components/Input";
 import ReturnButton from "../../components/ReturnButton";
 import api from "../../services/api";
-import { Container, ContentAll, Title, ContentButton } from "./styles";
+import {
+  Container,
+  ContentAll,
+  Title,
+  ContentButton,
+  ContentImage,
+  DrawTeacher,
+} from "./styles";
 import getValidationsErrors from "../../utils/getValidationsErrors";
 import * as Yup from "yup";
 
@@ -92,6 +99,12 @@ const Editing = () => {
     <Container>
       <ReturnButton />
       <ContentAll>
+        <ContentImage>
+          <DrawTeacher
+            resizeMode="contain"
+            source={require("../../../assets/updated_bg.png")}
+          />
+        </ContentImage>
         <Title>Edite ou apague os dados:</Title>
         <Form ref={formRef} onSubmit={handleSubmit}>
           <Input

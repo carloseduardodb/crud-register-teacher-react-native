@@ -24,3 +24,14 @@ export const ContentButton = styled.View`
   flex-direction: row-reverse;
   justify-content: space-between;
 `;
+
+export const DrawTeacher = styled.ImageBackground`
+  padding: 50px;
+`;
+
+export const ContentImage = styled.View`
+  background-color: #eff8ff;
+  padding: 20px 0;
+  margin-vertical: 15px;
+  border-radius: 50px;
+`;

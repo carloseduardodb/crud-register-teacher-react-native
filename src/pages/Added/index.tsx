@@ -73,7 +73,7 @@ const Added = () => {
         <ContentImage>
           <DrawTeacher
             resizeMode="contain"
-            source={require("../../../assets/addedbg.png")}
+            source={require("../../../assets/added_bg.png")}
           />
         </ContentImage>
         <Title>Preencha o formulário abaixo:</Title>

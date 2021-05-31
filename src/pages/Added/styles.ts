@@ -11,7 +11,7 @@ export const Title = styled.Text`
   font-size: 20px;
   margin-vertical: 20px;
   font-weight: 700;
-  color: #423f80;
+  color: #1a1a1a;
 `;
 
 export const ContentButton = styled.View`
@@ -25,11 +25,11 @@ export const DrawTeacher = styled.ImageBackground`
 export const ContentImage = styled.View`
   background-color: #eff8ff;
   padding: 20px 0;
-  margin-top: 10px;
+  margin-top: 15px;
   border-radius: 50px;
 `;
 
 export const ContentAll = styled.View`
   height: 100%;
-  justify-content: space-around;
+  justify-content: center;
 `;
