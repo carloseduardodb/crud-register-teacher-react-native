@@ -1,22 +1,35 @@
 # Teacher CRUD - React Native
 
-## Fiz isso porque estava entendiado e é bom sempre praticar o que se aprende
+## Fiz esse projeto porque a API em AdonisJS estava muito solitária, ai fiz um aplicativo em React pra ela não ficar sozinha.
 
 <br />
+
+## O que falta fazer
+
+<ul>
+<li>
+  Adicionar testes.
+</li>
+
+<li>
+  Listar mais items a partir da rolagem da pagina.
+</li>
+
+</ul>
 
 ## Imagem das telas do projeto
 
 <hr>
 <div style="display: flex; flex-direction: row;">
-  <img width="50%" src="./assets/readme/project_image_01.png"/>
-  <img width="50%" src="./assets/readme/project_image_02.png"/>
+  <img width="200" src="./assets/readme/project_image_01.png"/>
+  <img width="200" src="./assets/readme/project_image_02.png"/>
 </div>
 
 <br />
 
 <div style="display: flex; flex-direction: row;">
-  <img width="50%" src="./assets/readme/project_image_03.png"/>
-  <img width="50%" src="./assets/readme/project_image_04.png"/>
+  <img width="200" src="./assets/readme/project_image_03.png"/>
+  <img width="200" src="./assets/readme/project_image_04.png"/>
 </div>
 
 <br />
